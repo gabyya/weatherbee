@@ -3840,16 +3840,17 @@ tbody.collapse.show {
       flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: rgba(255, 213, 0, 0.5);
+  background-color: rgba(255, 213, 0, 0.75);
   background-clip: border-box;
   border: none;
   box-shadow: 0px 5px 12px 2px rgba(51, 0, 100, 0.12), inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
   color: #330064;
   border-radius: 4px 4px 4px 4px;
+  
 }
 .card h1, .card h2, .card h3, .card h4, .card h5, .card h6,
 .card .h1, .card .h2, .card .h3, .card .h4, .card .h5, .card .h6 {
-  color: #330064 !important;
+  color: #fff !important;
 }
 
 .card-body {
@@ -9086,11 +9087,15 @@ a.text-link-active:focus, a.text-link-active:hover {
  * October 11,2017
  */
 .bg-image {
-  background: url(../images/park.jpg);
+  background: url(../images/pizza.jpg);
   background-size: cover;
   repeat: none;
 }
 
 p {
+  color: white;
+}
+
+h1 {
   color: white;
 }

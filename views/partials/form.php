@@ -1,4 +1,4 @@
-<div class="image-container" background url= ("../images/park.jpg")>
+
 
 
 <form action="forecast.php" method="post">
@@ -9,4 +9,5 @@
   <button type="submit" name="submit" class="btn  text-white ">Search</button>
 </form>
 
-</div>
+
+<h1> Don't know what food to make on a really hot day or cold day? Come find out what you can get cookin' in your kitchen!</h1>
