@@ -18,10 +18,9 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		    <div class="navbar-nav">
-		      <a class="nav-item nav-link active" href="#">WeatherBee <span class="sr-only">(current)</span></a>
-		      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-		      <a class="nav-item nav-link" href="#">Weather</a>
-		      <a class="nav-item nav-link" href="#">Recipes</a>
+		      <a class="nav-item nav-link active" href="/">WeatherBee <span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link" href="results.php">Weather</a>
+		      <a class="nav-item nav-link" href="results.php">Recipes</a>
 		      <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a>
  -->		    </div>
 		  </div>

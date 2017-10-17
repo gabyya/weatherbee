@@ -39,3 +39,31 @@
 
   // Get our forecast data back
   $forecast = json_decode(file_get_contents($forecast), true);
+
+    // Start getting Pins and create an array
+  $food = array(
+    $hot = array(
+      '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741996018653/"></a>',
+      '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741995928140/"></a>',
+      '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741996018643/"></a>',
+      '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741995928159/"></a>',
+      
+    ),
+    $cold = array(
+      '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741995842339/"></a>',
+      '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741995842359/"></a>',
+      '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741995842335/"></a>',
+      '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741995842131/"></a>',
+      '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741995842160/"></a>'
+    )
+  );
+
+  $temp = $forecast['currently']['temperature'];
+
+  if($temp > 70){
+    $the_food = $food[0][rand(0, 4)];
+  } else if ($temp < 70) {
+     $the_food = $food[1][rand(0, 5)];
+  }
+
+

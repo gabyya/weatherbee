@@ -7,8 +7,9 @@
   <div class="text-left py-5 mx-auto" style="max-width: 320px;">
     <?php include 'partials/form.php'; ?>
   </div>
-  <div class="card p-4 my-5 mx-auto" style="max-width: 320px;">
+  <div class="card p-4 my-5 mx-auto" style="height:300px;">
     <p class="lead text-bold m-0"><?php echo $place; ?></p>
+    <img src="images/ <?php echo $forecast['currently']['icon']; ?>.png" alt="">
     <h2 class="display-1 mb-0">
       <?php echo round($forecast['currently']['temperature']); ?>&deg;
     </h2>
@@ -24,7 +25,7 @@
   <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true }'>
     <?php foreach($forecast['daily']['data'] as $day): ?>
       <div class="carousel-cell">
-        <div class="card p-4 my-5 mx-auto">
+        <div class="card p-4 my-5" >
           <p class="lead m-0">
             <?php echo gmdate("l", $day['time']); ?>
           </p>
@@ -39,6 +40,10 @@
     <?php endforeach; ?>
   </div>
 
+  <div class="p-4 my-5 mx-auto">
+      <?php echo $the_food; ?>
+
+  </div>
 
 
 
@@ -46,7 +51,7 @@
 
 
 
-<a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="500" data-pin-scale-width="115" href="https://www.pinterest.com/galvarado094/hot-weather-food/"></a>
+<!-- <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="500" data-pin-scale-width="115" href="https://www.pinterest.com/galvarado094/hot-weather-food/"></a> -->
 
 
 </main>
