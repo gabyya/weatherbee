@@ -6,5 +6,9 @@
   
   	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+<p style="text-align: center; flex-direction: ; color:yellow;">© Copyright 2017 WeatherBee</p>
+
+
+
   </body>
 </html>

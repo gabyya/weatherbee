@@ -46,6 +46,7 @@
       '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741996018653/"></a>',
       '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741995928140/"></a>',
       '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741996018643/"></a>',
+      '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/469852173610677668/"></a>',
       '<a data-pin-do="embedPin" data-pin-width="medium" href="https://www.pinterest.com/pin/398779741995928159/"></a>',
       
     ),
@@ -61,7 +62,7 @@
   $temp = $forecast['currently']['temperature'];
 
   if($temp > 70){
-    $the_food = $food[0][rand(0, 4)];
+    $the_food = $food[0][rand(0, 5)];
   } else if ($temp < 70) {
      $the_food = $food[1][rand(0, 5)];
   }

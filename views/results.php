@@ -2,14 +2,11 @@
 <pre>
   <?php //print_r($forecast); ?>
 </pre>
-<main class="container py-5 text-center">
+<main class="container py-5 text-center" style="background: url(../assets/images/park.jpg);">
 
-  <div class="text-left py-5 mx-auto" style="max-width: 320px;">
-    <?php include 'partials/form.php'; ?>
-  </div>
-  <div class="card p-4 my-5 mx-auto" style="height:300px;">
+   <div class="card p-4 my-5 mx-auto" style="height:300px;">
     <p class="lead text-bold m-0"><?php echo $place; ?></p>
-    <img src="images/ <?php echo $forecast['currently']['icon']; ?>.png" alt="">
+    <img src= "../assets/images/<?php echo $forecast['currently']['icon']; ?>.png" alt="" width="100" Height="100" class="mx-auto">
     <h2 class="display-1 mb-0">
       <?php echo round($forecast['currently']['temperature']); ?>&deg;
     </h2>
