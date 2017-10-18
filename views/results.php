@@ -4,9 +4,14 @@
 </pre>
 <main class="container py-5 text-center" style="background: url(../assets/images/park.jpg);">
 
-   <div class="card p-4 my-5 mx-auto" style="height:300px;">
+
+  <div>
+    <img src="photos/<?php echo $icon_current; ?>.png" alt="">
+  </div>
+
+   <div class="card p-4 my-5 mx-auto" style="height:450px;">
     <p class="lead text-bold m-0"><?php echo $place; ?></p>
-    <img src= "../assets/images/<?php echo $forecast['currently']['icon']; ?>.png" alt="" width="100" Height="100" class="mx-auto">
+    <img src= "assets/images/<?php echo $forecast['currently']['icon']; ?>.png" alt="" width="150" Height="150" class="mx-auto">
     <h2 class="display-1 mb-0">
       <?php echo round($forecast['currently']['temperature']); ?>&deg;
     </h2>
@@ -41,6 +46,8 @@
       <?php echo $the_food; ?>
 
   </div>
+
+<img src="<?php echo $icon_current; ?>.svg" alt="" width="200px">
 
 
 

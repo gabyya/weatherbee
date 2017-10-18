@@ -68,3 +68,7 @@
   }
 
 
+// weather variables
+
+  $icon_current = $forecast['currently']['icon'];
+
